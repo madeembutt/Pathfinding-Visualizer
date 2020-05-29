@@ -80,7 +80,7 @@ public class SelectionPanel extends JPanel {
                 okBtn.addActionListener(e1 -> {
                     for (int i = 0; i < searcherCheckBoxes.length; i++) {
                         if (searcherCheckBoxes[i].isSelected())
-                            new SearcherFrame(searcherCheckBoxes[i].getText(), file.getName(), searchers[i]);
+                            new SearcherFrame(searcherCheckBoxes[i].getText(), file, searchers[i]);
                     }
                 });
 

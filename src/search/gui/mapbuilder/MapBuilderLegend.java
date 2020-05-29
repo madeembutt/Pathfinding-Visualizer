@@ -15,6 +15,8 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Path;
 
 public class MapBuilderLegend extends JPanel implements MouseListener {
 
@@ -325,10 +327,13 @@ public class MapBuilderLegend extends JPanel implements MouseListener {
         if (mapName.getFieldText().isEmpty())
             return;
 
+        File mapFolder = new File("./maps");
         File map = new File("./maps/" + mapName.getFieldText() + ".txt");
 
+        boolean created = mapFolder.mkdir();
+
         try {
-            boolean created = map.createNewFile();
+            map.createNewFile();
         } catch (IOException e) {
             e.printStackTrace();
         }

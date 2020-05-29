@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Searcher Grid:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Searcher_Grid_jar</output-path>
+    <root id="archive" name="Searcher Grid.jar">
+      <element id="module-output" name="Searcher Grid" />
+    </root>
+  </artifact>
+</component>

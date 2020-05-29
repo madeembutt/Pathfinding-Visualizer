@@ -13,10 +13,10 @@ public class SearcherFrame extends JFrame {
     private static final int WIDTH_PADDING = 16;
     private static final int HEIGHT_PADDING = 39;
 
-    public SearcherFrame(String title, String filename, Searcher searcher) {
+    public SearcherFrame(String title, File file, Searcher searcher) {
         super(title);
 
-        SearcherFileReader fileReader = SearcherFileReader.readFile(new File("./maps/" + filename));
+        SearcherFileReader fileReader = SearcherFileReader.readFile(file);
 
         int gridRows = fileReader.getGridRows();
         int gridCols = fileReader.getGridCols();
