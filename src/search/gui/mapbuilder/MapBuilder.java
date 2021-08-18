@@ -8,6 +8,7 @@ import java.io.File;
 
 public class MapBuilder {
 
+    /* Commenting to test git stuff */
     public MapBuilder(String title, int rows, int cols, File file) {
         SearcherFileReader fileReader = SearcherFileReader.readFile(file);
 
